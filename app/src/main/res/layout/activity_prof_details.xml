@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".signUp.ProfDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/prof" />
+
+            <TextView
+                android:id="@+id/profDetails"
+                android:text="Professional details"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+                <EditText
+                    android:layout_weight="9"
+                    android:hint="Organisation"
+                    android:textSize="15sp"
+                    android:id="@+id/organisation"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/institute"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+                <EditText
+                    android:id="@+id/designation"
+                    android:layout_weight="9"
+                    android:hint="Designation"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/profession"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+                <EditText
+
+                    android:layout_weight="9"
+                    android:hint="Department"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/course"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/currentlyWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"/>
+                <TextView
+                    android:id="@+id/currentlyWorkDec"
+                    android:layout_marginLeft="10dp"
+                    android:text="Currently work here"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date : "
+                    />
+
+                <Spinner
+                    android:id="@+id/start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/years"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="End Date   : "
+                    android:textSize="15sp"
+                    android:id="@+id/endDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/years"
+                    android:scrollbarSize="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+            <Button
+                android:layout_marginTop="70dp"
+                android:id="@+id/save"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/mygradient1"
+                android:textSize="20dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

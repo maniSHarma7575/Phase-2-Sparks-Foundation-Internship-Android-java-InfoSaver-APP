@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context=".update.UpdateEducDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/education"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Update Education Details"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:layout_weight="9"
+                    android:id="@+id/organisation"
+                    android:hint="Institute"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/institute"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+                <EditText
+                    android:layout_weight="9"
+                    android:id="@+id/degree"
+                    android:hint="Course"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/course"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+                <EditText
+                    android:layout_weight="9"
+                    android:id="@+id/location"
+                    android:hint="Location"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/location"/>
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:text="Start Year : "
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/startYear"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:autofillHints="2019"
+                android:entries="@array/years"></Spinner>
+            <TextView
+                android:text="End Year   : "
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/endYear"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:autofillHints="2019"
+                android:entries="@array/years"></Spinner>
+
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/save"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/mygradient1"
+                android:textSize="20dp"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

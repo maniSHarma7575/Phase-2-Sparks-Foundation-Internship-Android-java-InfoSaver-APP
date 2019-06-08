@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">InfoSaver</string>
+    <string name="login">Login</string>
+    <string name="passcodehint">Password</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="location">Location</string>
+    <string name="links">Links</string>
+    <string name="skills">Skills</string>
+    <string name="save">Save</string>
+    <string name="facebook_app_id">394021357879667</string>
+    <string name="fb_login_protocol_scheme">fb394021357879667</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">wmoaOk0Ll1YWh6t87OIjAPbEB</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">7ET2Wtgcf8gvACd99QUuyIzcUrDnSOnQszXHjsbGbvltn8VOQL</string>
+
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+    </string-array>
+
+
+</resources>

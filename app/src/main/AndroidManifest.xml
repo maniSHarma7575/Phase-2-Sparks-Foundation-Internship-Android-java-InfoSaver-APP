@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/title"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/title"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".TweetActivity"></activity>
+        <activity android:name=".FacebookActivity" />
+        <activity android:name=".update.UpdateProfDetails" />
+        <activity android:name=".update.UpdatePersonalDetails" />
+        <activity android:name=".update.UpdateEducDetails" />
+        <activity android:name=".profile.fragments.PersonalFragment" />
+        <activity android:name=".profile.fragments.ProfessionalFragment" />
+        <activity android:name=".profile.fragments.EducationFragment" />
+        <activity android:name=".profile.Profile" />
+        <activity android:name=".signUp.EducDetails" />
+        <activity android:name=".signUp.ProfDetails" />
+        <activity android:name=".signUp.PersonalDetails" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

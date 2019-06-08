@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item1"
+        android:title="Log out"
+        app:showAsAction="never"></item>
+    <item android:id="@+id/item2"
+        app:showAsAction="never"
+        android:title="Delete Account"></item>
+    <item android:id="@+id/item3"
+        android:title="Profile"
+        app:showAsAction="never"></item>
+    <item android:id="@+id/item4"
+        app:showAsAction="never"
+        android:title="Exit"></item>
+
+</menu>
